@@ -59,34 +59,49 @@ public class RPSMatch
          int cResult = (int) (Math.random() * 3);
          if(humanPlay == "Rock")
          {
-             if(cResult <2)
+             if(cResult > 2)
              {
                  computerPlay = "Scissors";
              }
              else
              {
+                cResult = (int) (Math.random() * 6);
+                if(cResult > 2)
+                {
+                    computerPlay = "Rock";
+                }
                  computerPlay = "Paper";
              }
         }
          if(humanPlay == "Scissors")
          {
-              if(cResult < 2)
+              if(cResult > 2)
               {
                   computerPlay = "Paper";
               }
               else
               {
+                cResult = (int) (Math.random() * 6);
+                if(cResult > 2)
+                {
+                    computerPlay = "Scissors";
+                }
                   computerPlay = "Rock";
               }
         }
         if(humanPlay == "Paper")
         {
-            if(cResult < 2)
+            if(cResult > 2)
             {
                 computerPlay = "Rock";
             }
             else
             {
+                cResult = (int) (Math.random() * 6);
+                if(cResult > 2)
+                {
+                    computerPlay = "Paper";
+                }
                 computerPlay = "Scissors";
             }
         }

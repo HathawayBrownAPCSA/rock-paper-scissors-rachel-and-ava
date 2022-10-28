@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=RPSMatch
+comment0.text=\r\n\ Plays\ Rock-Paper-Scissors\!\r\n\r\n\ @author\ Rachel\ B.\ and\ Ava\ K.\r\n\ @version\ 2022-10-28\r\n
+comment1.params=
+comment1.target=RPSMatch()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RPSMatch\r\n
+comment2.params=s
+comment2.target=void\ setHumanPlay(java.lang.String)
+comment2.text=\r\n\ We\ worked\ on\ every\ part\ together\r\n
+comment3.params=
+comment3.target=java.lang.String\ getComputerPlay()
+comment3.text=\r\n\ No\ params\r\n\ @return\ the\ computer's\ play\r\n
+comment4.params=
+comment4.target=java.lang.String\ getResult()
+comment4.text=\r\n\ @returns\ the\ result\ of\ each\ game\r\n
+comment5.params=
+comment5.target=int\ getHumanWins()
+comment5.text=\r\n\ @return\ total\ number\ of\ human\ wins\r\n
+comment6.params=
+comment6.target=int\ getComputerWins()
+comment6.text=\r\n\ @return\ total\ number\ of\ computer\ wins\r\n
+comment7.params=
+comment7.target=int\ getTies()
+comment7.text=\r\n\ @return\ total\ number\ of\ ties\r\n
+numComments=8

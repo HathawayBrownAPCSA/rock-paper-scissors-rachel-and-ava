@@ -56,21 +56,28 @@ public class RPSMatch
          // }
          
          // Cheating version:
-         int cResult = (int) (Math.random() * 3);
+         int cResult = (int) (Math.random() * 4);
          if(humanPlay == "Rock")
          {
-             if(cResult > 2)
+             if(cResult >= 2)
              {
-                 computerPlay = "Scissors";
+                 computerPlay = "Paper";
              }
              else
              {
                 cResult = (int) (Math.random() * 6);
-                if(cResult > 2)
+                if(cResult > 1 && cResult < 4 )
                 {
                     computerPlay = "Rock";
                 }
-                 computerPlay = "Paper";
+                else if(cResult >= 4)
+                {
+                    computerPlay = "Paper";
+                }
+                else
+                {
+                    computerPlay = "Scissors";
+                }
              }
         }
          if(humanPlay == "Scissors")
@@ -82,27 +89,41 @@ public class RPSMatch
               else
               {
                 cResult = (int) (Math.random() * 6);
-                if(cResult > 2)
+                if(cResult > 1 && cResult < 4)
                 {
                     computerPlay = "Scissors";
                 }
-                  computerPlay = "Rock";
+                else if(cResult >= 4)
+                {
+                    computerPlay = "Rock";
+                }
+                else
+                {
+                computerPlay = "Paper";
+                }
               }
         }
         if(humanPlay == "Paper")
         {
             if(cResult > 2)
             {
-                computerPlay = "Rock";
+                computerPlay = "Scissors";
             }
             else
             {
                 cResult = (int) (Math.random() * 6);
-                if(cResult > 2)
+                if(cResult > 2 && cResult < 4)
                 {
                     computerPlay = "Paper";
                 }
-                computerPlay = "Scissors";
+                else if(cResult >= 4)
+                {
+                    computerPlay = "Scissors";
+                }   
+                else
+                {
+                    computerPlay = "Rock";
+                }
             }
         }
         return computerPlay;
@@ -114,12 +135,13 @@ public class RPSMatch
     {
         if(computerPlay == humanPlay)
         {
+            ties += 1;
             return "It's a tie!";
         }
         //when human play is rock
         if(humanPlay == "Rock")
         {
-            if(computerPlay != "Paper")
+            if(computerPlay != "Paper" && computerPlay != "Rock")
             {
                 humanWins += 1;
                 return "You win!";
@@ -127,7 +149,7 @@ public class RPSMatch
         }
         else if (humanPlay == "Paper")
         {
-            if(computerPlay != "Scissors")
+            if(computerPlay != "Scissors" && computerPlay != "Paper")
             {
                 humanWins += 1;
                 return "You win!";
@@ -135,7 +157,7 @@ public class RPSMatch
         }
         else if(humanPlay == "Scissors")
         {
-            if(computerPlay != "Rock")
+            if(computerPlay != "Rock" && computerPlay != "Scissors")
             {
                 humanWins += 1; 
                 return "You win!";

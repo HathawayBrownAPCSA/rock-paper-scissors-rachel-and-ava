@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=RPS2
+comment0.text=\r\n\ Starting\ code\ for\ a\ Rock-Paper-Scissors\ game\!\r\n\r\n\ @author\ Rachel\ B.\ and\ Ava\ K.\r\n\ @version\ 2022-10-28\r\n
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment2.params=event
+comment2.target=void\ rockClick(javafx.event.ActionEvent)
+comment3.params=event
+comment3.target=void\ paperClick(javafx.event.ActionEvent)
+comment3.text=\r\n\ This\ will\ be\ executed\ when\ the\ player\ clicks\ the\ "Paper"\ button\r\n\ \r\n
+comment4.params=event
+comment4.target=void\ scissorsClick(javafx.event.ActionEvent)
+comment4.text=\r\n\ This\ will\ be\ executed\ when\ the\ player\ clicks\ the\ "Scissors"\ button\r\n\ \r\n
+comment5.params=
+comment5.target=void\ updateScores()
+numComments=6
